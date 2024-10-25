@@ -23,31 +23,32 @@ A simple ARP network scanner written in Go that discovers devices connected to t
 
 ### Steps
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/yourusername/go-network-scanner.git
    cd go-network-scanner
-###Initialize a Go module:
+2. Initialize a Go module:
 
-    ```bash
+    
     go mod init go-network-scanner
 
-###Install the necessary dependencies:
+3. Install the necessary dependencies:
 
-    ```bash
+    
      go get -u github.com/google/gopacket
      go get -u github.com/google/gopacket/pcap
-###Usage
+##Usage
 Build the project:
 
-    ```bash
+     ```bash
      go build -o network_scanner
-##Run the scanner with root privileges to access network interfaces:
+2.Run the scanner with root privileges to access network interfaces:
 
-    ```bash
+    
     sudo ./network_scanner
-###Provide your network interface name as an argument (e.g., en0):
+3.Provide your network interface name as an argument (e.g., en0):
 
-    ```bash
+    
     sudo ./network_scanner en0
     
 ##Code Overview
