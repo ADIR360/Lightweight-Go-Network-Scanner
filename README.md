@@ -37,7 +37,9 @@ A simple ARP network scanner written in Go that discovers devices connected to t
     
      go get -u github.com/google/gopacket
      go get -u github.com/google/gopacket/pcap
-##Usage
+   
+## Usage
+
 Build the project:
 
      ```bash
@@ -51,27 +53,28 @@ Build the project:
     
     sudo ./network_scanner en0
     
-##Code Overview
-##Main Functionality
+## Code Overview
+### Main Functionality
 The scanner sends ARP requests to the specified network interface and listens for ARP replies.
 It captures the IP and MAC addresses of responding devices and displays them.
-###Key Functions
+### Key Functions
 arpScan(iface string) []arpResult: Performs the ARP scanning on the specified interface and returns a list of discovered devices.
-###Timeout Mechanism
+### Timeout Mechanism
 The scan process includes a timeout to avoid getting stuck while waiting for responses.
-###Contributing
+### Contributing
 Contributions are welcome! If you have suggestions for improvements or additional features, please create a pull request or open an issue.
 
-##Fork the repository.
-###Create your feature branch:
+## Fork the repository.
+1.Create your feature branch:
     
     git checkout -b feature/YourFeature
-###Commit your changes:
+2.Commit your changes:
 
     git commit -m 'Add some feature'
-###Push to the branch:
+3.Push to the branch:
 
     git push origin feature/YourFeature
 Open a pull request.
-##License
+
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
